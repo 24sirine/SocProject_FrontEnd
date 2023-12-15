@@ -1,0 +1,130 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    
+                    <div class="table-wrapper">
+           
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Cause</th>
+                                    <th>Nb accidents</th>
+                                    <th>Nb tues</th>
+                                    <th>Nb blesses</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let causes of CauseDetails">
+                                  
+                                    <td>{{causes.id}}</td>
+                                    <td>{{causes.cause}}</td>
+                                    <td>{{causes.accidents}}</td>
+                                    <td>{{causes.tues}}</td>
+                                    <td>{{causes.blesses}}</td>
+                                    
+                                  
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                  <div class="clearfix">
+                           
+                            <ul class="pagination">
+                                <li class="page-item disabled"><a href="#">Previous</a></li>
+                                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                                <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                <li class="page-item"><a href="#" class="page-link">5</a></li>
+                                <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 style="margin-left: 221px;
+font-size: 31px;
+margin-bottom: 15px;">Pourcentage des accidents par cause : </h5>
+<div id="graphiqueVtb">
+    <!--<img src="../assets/css/cause.jpg" >-->
+
+    <dl style="	background-color:#fe3210; width :40.31% "><dt style="    width: 285px;">Négligence et inattention
+    </dt><dd>40.31%</dd></dl>
+    <dl style="	background-color:#fe3210; width :16.09% "><dt style="    width: 285px;">Vitesse</dt><dd>16.09%</dd></dl>
+    <dl style="	background-color:#fe3210; width :7.02% "><dt style="    width: 285px;">Tranchée de la route
+    </dt><dd>7.02%</dd></dl>
+    <dl style="	background-color:#fe3210; width :8.17% "><dt style="    width: 285px;">Non-respect de la priorité </dt><dd>8.17%</dd></dl>
+    <dl style="	background-color:#fe3210; width :2.59% "><dt style="    width: 285px;">Non-respect du panneau stop   </dt><dd>2.59%</dd></dl>
+    <dl style="	background-color:#fe3210; width :4.02% "><dt style="    width: 285px;">Changement de direction
+    </dt><dd>4.02%</dd></dl>
+    <dl style="	background-color:#fe3210; width :5.57%"><dt style="    width: 285px;">Non-respect du virage à droite  </dt><dd>5.57%</dd></dl>
+    <dl style="	background-color:#fe3210; width :5.58% "><dt style="    width: 285px;">Enlèvement
+    </dt><dd>5.85%</dd></dl>
+    <dl style="	background-color:#fe3210; width :1.77% "><dt style="    width: 285px;">Marche arrière
+    </dt><dd>1.77%</dd></dl>
+    <dl style="	background-color:#fe3210; width :1.47% "><dt style="    width: 285px;">Conduite en état d'ivresse   </dt><dd>1.47%</dd></dl>
+    <dl style="	background-color:#fe3210; width :1.82% "><dt style="    width: 285px;">Dépassement interdit  </dt><dd>1.82%</dd></dl>
+    <dl style="	background-color:#fe3210; width :0.2% "   ><dt style="    width: 285px;">Traversée de la voie ferrée</dt><dd>0.2%</dd></dl>
+    <dl style="	background-color:#fe3210; width :0.22% "><dt style="    width: 285px;">Négligence d'un événement</dt><dd>0.22%</dd></dl>
+    <dl style="	background-color:#fe3210; width :0.52% "><dt style="    width: 285px;">Violation du feu rouge</dt><dd>0.52%</dd></dl>
+    <dl style="	background-color:#fe3210; width :0.54% "><dt style="    width: 285px;">Tentative de monter ou descendre    </dt><dd>0.54%</dd></dl>
+    <dl style="	background-color:#fe3210; width :0.6% "><dt style="    width: 285px;">Dérapage de la roue
+    </dt><dd>0.6%</dd></dl>
+    <dl style="	background-color:#fe3210; width :0.69% "><dt style="    width: 285px;">Conduite sans permis</dt><dd>0.69%</dd></dl>
+    <dl style="	background-color:#fe3210; width :0.74% "><dt style="    width: 285px;">Conduite de nuit sans éclairage
+    </dt><dd>0.74%</dd></dl>
+    <dl style="	background-color:#fe3210; width :0.82% "><dt style="    width: 285px;" >Ouverture de porte
+    </dt><dd>0.82%</dd></dl>
+    <dl style="	background-color:#fe3210; width :0.99% "><dt style="    width: 285px;">Circulation dans une zone interdite
+    </dt><dd>0.99%</dd></dl>
+   
+
+    
+   
+
+  </div>
+
+

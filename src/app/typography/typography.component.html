@@ -1,0 +1,108 @@
+<div class="main-content" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                   
+                    <div class="main-content">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        
+                                        <div class="table-wrapper">
+                               
+                                            <table class="table table-striped table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Mois</th>
+                                                        <th>Nb accidents</th>
+                                                        <th>Nb tues</th>
+                                                        <th>Nb blesses</th>
+                    
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr *ngFor="let mois of MoisDetails">
+                                                      
+                                                        <td>{{mois.id}}</td>
+                                                        <td>{{mois.moiss}}</td>
+                                                        <td>{{mois.accidents}}</td>
+                                                        <td>{{mois.tues}}</td>
+                                                        <td>{{mois.blesses}}</td>
+                                                        
+                                                      
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                      <div class="clearfix">
+                                               
+                                                <ul class="pagination">
+                                                    <li class="page-item disabled"><a href="#">Previous</a></li>
+                                                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                                    <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                                                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                                                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    
+
+                        <div class="main-content">
+                            <div class="container-fluid">
+                                
+                                <div class="row">
+                                    <div style="width: 527px;
+                                    margin-left: 161px;"  class="col-md-6">
+                                        <lbd-chart
+                                          [title]="'Pourcentage des blessés et morts chaque mois'"
+                                          [subtitle]="''"
+                                          [chartType]="activityChartType"
+                                          [chartData]="activityChartData"
+                                          [chartOptions]="activityChartOptions"
+                                          [chartResponsive]="activityChartResponsive"
+                                          [legendItems]="activityChartLegendItems"
+                                          [withHr]="true"
+                                         >
+                                        </lbd-chart>
+                                    </div>
+                                    <div class="col-md-6">
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
